@@ -13,7 +13,6 @@ class CharacterViewModel : CharacterViewModelProtocol {
     
     var characters : [Character] = []
     
-    
     func loadData() {
         service.getData { [weak self] character in
             self?.delegate?.handleViewModelOutput(character!)

@@ -12,7 +12,6 @@ protocol CharacterViewModelProtocol {
     func loadData()
 }
 
-
 protocol CharacterViewModelDelegate {
     func handleViewModelOutput (_ output : [Character])
 }
