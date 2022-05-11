@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		011C95A0282BE5FE00F160C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C959F282BE5FE00F160C2 /* AppDelegate.swift */; };
 		011C95A2282BE5FE00F160C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C95A1282BE5FE00F160C2 /* SceneDelegate.swift */; };
-		011C95A4282BE5FE00F160C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C95A3282BE5FE00F160C2 /* ViewController.swift */; };
 		011C95A7282BE5FE00F160C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011C95A5282BE5FE00F160C2 /* Main.storyboard */; };
 		011C95A9282BE60000F160C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011C95A8282BE60000F160C2 /* Assets.xcassets */; };
 		011C95AC282BE60000F160C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011C95AA282BE60000F160C2 /* LaunchScreen.storyboard */; };
+		01E27363282C0D1400DC3280 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2735C282C0D1400DC3280 /* CharacterViewModel.swift */; };
+		01E27364282C0D1400DC3280 /* RickAndMortyContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2735E282C0D1400DC3280 /* RickAndMortyContracts.swift */; };
+		01E27365282C0D1400DC3280 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2735F282C0D1400DC3280 /* Service.swift */; };
+		01E27366282C0D1400DC3280 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E27360282C0D1400DC3280 /* Character.swift */; };
+		01E27367282C0D1400DC3280 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E27362282C0D1400DC3280 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		011C959C282BE5FE00F160C2 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		011C959F282BE5FE00F160C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		011C95A1282BE5FE00F160C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		011C95A3282BE5FE00F160C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		011C95A6282BE5FE00F160C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		011C95A8282BE60000F160C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		011C95AB282BE60000F160C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		011C95AD282BE60000F160C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01E2735C282C0D1400DC3280 /* CharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		01E2735E282C0D1400DC3280 /* RickAndMortyContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RickAndMortyContracts.swift; sourceTree = "<group>"; };
+		01E2735F282C0D1400DC3280 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		01E27360282C0D1400DC3280 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		01E27362282C0D1400DC3280 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				011C959F282BE5FE00F160C2 /* AppDelegate.swift */,
 				011C95A1282BE5FE00F160C2 /* SceneDelegate.swift */,
-				011C95A3282BE5FE00F160C2 /* ViewController.swift */,
 				011C95A5282BE5FE00F160C2 /* Main.storyboard */,
 				011C95A8282BE60000F160C2 /* Assets.xcassets */,
 				011C95AA282BE60000F160C2 /* LaunchScreen.storyboard */,
 				011C95AD282BE60000F160C2 /* Info.plist */,
+				01E2735D282C0D1400DC3280 /* Model */,
+				01E2735B282C0D1400DC3280 /* ViewModel */,
+				01E27361282C0D1400DC3280 /* View */,
 			);
 			path = RickAndMorty;
+			sourceTree = "<group>";
+		};
+		01E2735B282C0D1400DC3280 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01E2735C282C0D1400DC3280 /* CharacterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		01E2735D282C0D1400DC3280 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01E2735E282C0D1400DC3280 /* RickAndMortyContracts.swift */,
+				01E2735F282C0D1400DC3280 /* Service.swift */,
+				01E27360282C0D1400DC3280 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01E27361282C0D1400DC3280 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01E27362282C0D1400DC3280 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011C95A4282BE5FE00F160C2 /* ViewController.swift in Sources */,
+				01E27363282C0D1400DC3280 /* CharacterViewModel.swift in Sources */,
+				01E27364282C0D1400DC3280 /* RickAndMortyContracts.swift in Sources */,
+				01E27366282C0D1400DC3280 /* Character.swift in Sources */,
+				01E27367282C0D1400DC3280 /* ViewController.swift in Sources */,
 				011C95A0282BE5FE00F160C2 /* AppDelegate.swift in Sources */,
 				011C95A2282BE5FE00F160C2 /* SceneDelegate.swift in Sources */,
+				01E27365282C0D1400DC3280 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
