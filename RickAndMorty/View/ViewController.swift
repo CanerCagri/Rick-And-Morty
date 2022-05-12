@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         tableView.allowsSelection = false
         tableView.register(CharacterTableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        tableView.frame = CGRect(x: 0, y: 0, width: view.safeAreaLayoutGuide.layoutFrame.width, height: view.safeAreaLayoutGuide.layoutFrame.height)
         view.addSubview(tableView)
     }
     
